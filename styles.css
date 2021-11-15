@@ -1,0 +1,975 @@
+@media (max-width: 1024px) {
+  body;
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 600px) {
+}
+
+
+body {
+  font-family: "fira sans light", sans serif;
+  margin: 0px;
+}
+
+body {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+}
+
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+nav li {
+  display: inline-block;
+
+}
+
+nav ul{
+    background-color: #4fa6bc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: -40px 0px 0px 0px;
+    border: 0px;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+}
+
+nav{
+    color: #4fa6bc;
+    grid-column: 1/4;
+    align-self: center;
+}
+
+nav a {
+  background-color: #4fa6bc;
+  color: white;
+  text-decoration: none;
+  text-size: 26px;
+  padding: 3px 50px;
+  font-family: "fira sans light";
+
+}
+
+header{
+    background-color: #0A3641;
+    max-width: 100%;
+    max-height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-gap: 3em;
+    grid-auto-columns: minmax(100px,auto);
+}
+
+header Img{
+    max-width: 250px;
+}
+
+.logo{
+    justify-self: center;
+    grid-column: 2;
+}
+
+.help_section{
+    align-self: center;
+    justify-self: end;
+    color: #b1eaf8;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1em;
+}
+
+
+
+ .hamburger, #hamburger-checkbox{
+    display: none;
+}
+
+#hamburger-checkbox:checked ~ .hamburger{
+    display: block;
+    
+}
+
+.hamburger_menu label{
+    padding: 5px;
+}
+.hamburger{
+    position: absolute;
+    right: 0px;
+    background-color: #b1eaf8;
+    color: #0A3641
+    font-size: 1em;
+    margin-top: 65px;
+}
+
+.hamburger ul{
+    margin-top: 65px;
+    border-width: 1px;
+
+}
+
+ul{
+    border-color:#0A3641;
+    border-style: solid;
+    border-width: 1px;
+}
+.hamburger a{
+    padding: 10px 65px 10px 5px;
+    font-size: 1.2em;
+    text-align: left;
+    color:#0A3641;
+    
+}
+
+a{
+    text-decoration: none;
+}
+.hambuger_menu{
+    position: relative;
+}
+
+.hambuger_menu a{
+    display: inline-block;
+}
+main p{
+    font-size: 0.9em;
+    text-align: center;
+    font-family: 'fira sans light';
+    color:#4fa6bc;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+main{
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+/* Home page */
+
+.sale{
+    display: grid;
+    grid-template-columns: auto;
+}
+.cta_sale {
+    background-image: url("images/home_sale.jpg");
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    min-height:
+    position: relative;
+    padding: 0px 120px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.men_women{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+
+}
+
+.home_men{
+    padding: 10px 0px 0px 0px;
+
+}
+
+.home_women{
+    padding: 10px 0px 0px 0px;
+
+}
+
+.men_women Img{
+    max-height: 590px;
+}
+
+a {
+    background-color: ;fiks**
+    transition: background-color .5s;
+  }
+  
+  a:hover {
+    background-color: #FFA001;
+  }
+  
+
+.cta{
+    background-color:transparent;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 30px;
+    text-transform: uppercase;
+    border-color: white;
+    color: white;
+    border-style: solid;
+    border-radius: 1px;
+    margin-top: -170px;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    border-width: 1px;
+}
+
+.section_cta{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.cta_sale{
+    font-size: 150px;
+    text-decoration: none;
+    color: #FFC11C;
+    text-transform: uppercase;
+    font-family: 'fira sans medium';
+    text-shadow: 1px 1px 3px #313131;
+}
+
+
+
+.cta_big{
+    background-color: #FFA001;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 50px;
+    margin: 10px 0px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.section_cta_big{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.cta_view{
+    background-color:transparent;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 30px;
+    text-transform: uppercase;
+    border-color: #0A3641;
+    color: #0A3641;
+    border-style: solid;
+    border-radius: 0px;
+    margin-top: -55px;
+    margin-bottom: 30px;
+    border-width: 2px;
+}
+
+.instapara h2 p{
+    text-align: center;
+    text-transform: uppercase;
+    color: #0A3641;
+    font-family: FiraSans-Medium;
+}
+
+.instapara h2{
+    text-align: center;
+    font-size: 20px;
+    padding: 50px 0px 0px 0px;
+    text-transform: uppercase;
+}
+
+.instapara p{
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-style: 
+}
+
+.insta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    justify-content: center;
+
+}
+
+.instapic img{
+    flex: 1;
+    max-width: 250px;
+    max-height: 250px;
+   
+}
+
+.view_more_insta{
+    margin: 75px 0px 5px 0px;
+    display: flex;
+    justify-content: center;
+
+}
+
+footer{
+    background-color: #0A3641;
+    color: #b1eaf8;
+    font-size: 0.8em;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.newsletter_title{
+    font-family: "Fira Sans Medium";
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+footer p{
+    margin: 10px 0px;
+}
+.newsletter{
+    margin: 80px 15px 100px 10px;
+}
+
+#button{
+    width: 70px;
+    height: 40px;
+    font-family:
+    font-size: 0.8em;
+    color:#0A3641;
+    background-color: #4fa6bc;
+    border-radius: 0%;
+    border-color: #0A3641;
+    margin-left: -1px;
+    border: 0px;
+    padding-left: -1.5px;
+}
+
+#button:hover{
+    background-color: #FFA001;
+    transition: 1s;
+}
+
+#email{
+    width: 280px;
+    height: 35px;
+    font-family:
+    font-size: 0.5em;
+    color:#0A3641;
+    background-color: #b1eaf8;
+    border-radius: 0%;
+    border-color: #b1eaf8;
+    margin-right: 0px;
+    border: 0px;
+    padding-right: -1.5px;
+}
+
+.follow{
+    align-self: center;
+    margin-top: -100px;
+    margin-right: 60px;
+    font-family: 'fira sans medium';
+    font-size: 14px;
+}
+
+.fa, .fab, .fad, .fal, .far, .fas{
+    font-size: 20px;
+    padding: 2px;
+}
+
+
+
+h1{
+    background-image: url("images/mensjackets.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 10%;
+    background-position-y: 30%;
+    min-height: 1em;
+    text-align: center;
+    color:white;
+    font-size: 2.6em;
+    vertical-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-size: cover;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px #313131;
+    
+}
+
+.breadcrumbs a{
+    font-size: 0.7em;
+    color: #0A3641;
+}
+
+span{
+    font-size: 0.8em;
+    color:#FFA001;
+    font-style: italic;
+}
+
+
+.men_jacket_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.men_jacket_list Img{
+    max-height: 250px;
+
+}
+
+.men_jacket_list h2{
+    margin: 2px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #0A3641;
+}
+
+.men_jacket_list p{
+    margin: 2px;
+    font-size: 0.7em;
+    color:#0A3641;
+    text-align: left;
+}
+
+
+
+
+.womens_jackets h1{
+    background-image: url("images/samuel-ferrara-iecJiKe_RNg-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    min-height: 1em;
+    text-align: center;
+    color:white;
+    font-size: 2.6em;
+    vertical-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-size: cover;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px #313131;
+    
+}
+
+
+.women_jacket_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.women_jacket_list Img{
+    max-height: 250px;
+
+}
+
+.women_jacket_list h2{
+    margin: 2px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #0A3641;
+}
+
+.women_jacket_list p{
+    margin: 2px;
+    font-size: 0.7em;
+    color:#0A3641;
+    text-align: left;
+}
+
+
+.contact_us h1{
+    background-image: url("images/home_insta_3.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 10%;
+    background-position-y: 35%;
+    min-height: 1em;
+    text-align: center;5
+    color:white;
+    font-size: 2.6em;
+    vertical-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-size: cover;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px #313131;
+}
+
+#message{
+    width: 600px;
+    height: 150px;
+    font-family:
+    font-size: 0.5em;
+    border-radius: 0%;
+    border-color: black;
+    margin-right: 0px;
+    border: 1px;
+    border-style: solid;
+    margin: 10px 10px 10px 0px;
+}
+
+.contact_fields{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: ;
+}
+
+fieldset{
+    border-style: none;
+}
+
+
+
+.contact_way{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    align-items: center;
+}
+.contact_way a{
+
+    color: #0A3641;
+    padding: 10px;
+    background-color:#b1eaf8;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: 'fira sans medium';
+    box-shadow: 2px 5px 5px lightgrey;
+}
+
+.contact_way i{
+    font-size: 1.2em;
+    margin-right: 2px;
+    margin-left: -0.2em;
+}
+
+.contact_fields #button{
+    font-family: 'fira sans medium';
+    box-shadow: 2px 5px 5px lightgrey;
+    text-shadow: 1px 1px 3px lightgrey;
+}
+
+#email_button{
+    text-shadow: 1px 1px 3px lightgrey;
+}
+
+#email_button:hover{
+    background-color: #FFC11C;
+    transition: 0.5s;
+    color: #0A3641;
+    text-shadow: none;
+}
+
+#call_button{
+    background-color:#4fa6bc;
+    color:white;
+    text-shadow: 1px 1px 3px #444444;
+}
+
+#call_button:hover{
+    background-color: #FFA001;
+    transition: 0.5s;
+    color: #0A3641;
+    text-shadow: none;
+ }
+
+#map_button{
+    background-color: #0A3641;
+    color: white;
+    text-shadow: 1px 1px 3px #444444;
+}
+
+#map_button:hover{
+    background-color: #FFC11C;
+    transition: 0.5s;
+    color: #0A3641;
+    text-shadow: none;
+ }
+
+#messenger_button{
+    background-color:#4267b2;
+    color:white;
+    text-shadow: 1px 1px 3px #444444;
+}
+
+#messenger_button:hover{
+    background-color: #FFA001;
+    transition: 0.5s;
+    color: #0A3641;
+    text-shadow: none;
+ }
+
+
+
+ .about_us h1{
+    background-image: url("images/daniel-roe-lpjb_UMOyx8-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 71%;
+    min-height: 1em;
+    text-align: center;
+    color:white;
+    font-size: 2.6em;
+    vertical-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-size: cover;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px #313131;
+
+ }
+
+ .about_us_p p{
+     text-align: left;
+ }
+
+.about_us_p p:nth-child(3){
+     color: #FFA001;
+     font-family: 'fira sans medium';
+ }
+
+
+
+
+ .bodøraincoat h1{
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position-x: 10%;
+    background-position-y: 35%;
+    min-height: 1em;
+    text-align: center;
+    color: #0A3641;
+    font-size: 1.8em;
+    vertical-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-size: cover;
+    text-transform: uppercase;
+    text-shadow: none;
+ }
+
+ .bodøraincoat_images{
+     display: grid;
+     grid-template-columns: 1fr 2fr 1fr;
+     grid-column-gap: 25px;
+     justify-content: center;
+ }
+
+ .bodøraincoat_images img{
+     max-height: 400px;
+ }
+
+
+
+ .product_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 40px;
+    margin-bottom: -60px;
+ }
+
+ .product_info p{
+     grid-column: 1/3;
+     justify-self: start;
+     margin-left: 40px;
+     text-align: left;
+ }
+
+ .product_info i{
+     grid-column: 3;
+     justify-self: end;
+     margin-right: 40px;
+ }
+
+ .product_info fieldset{
+     grid-column: 1/3;
+     text-align: start;
+     font-size: 0.8em;
+     margin-left: 30px;
+ }
+
+
+ .pick_size{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+     border-style: solid;
+     border-width: 1px;
+     border-color: #0A3641;
+     padding: 30px 40px 30px 40px;
+     margin-bottom: -20px;
+ }
+
+ .pick_size fieldset{
+     padding-left: 0px;
+ }
+
+ .pick_size p:nth-child(1){
+     font-size: 0.9em;
+     justify-self: start;
+     color:#0A3641;
+     font-family: 'fira sans medium';
+ }
+
+ .pick_size p:nth-child(2){
+     justify-self: end;
+      color:#0A3641;
+     font-family: 'fira sans medium';
+ }
+
+ #sizes{
+     padding: 13px 90px;
+     border-radius: 0px;
+     border-style: solid;
+     border-color: #0A3641;
+     border-width: 1px;
+     background-color: white;
+     font-size: 0.75em;
+     color: #0A3641;
+     font-family: 'fira sans';
+ }
+
+ .pick_size a{
+    width: 271.663px;
+    padding-top: 11px;
+    height: 20px;
+    padding-bottom: 10px;
+    margin-top: 6px;
+    text-align: center;
+    justify-self: end;
+    border-radius: 0px;
+    border-style: solid;
+    border-color: #0A3641;;
+    border-width: 1px;
+    background-color: #0A3641;
+    font-size: 0.75em;
+    color: white;
+    font-family: 'fira sans';
+ }
+
+ .checkout_success h1{
+     background-image: none;
+     font-size: 1.8em;
+     text-shadow:  1px 1px 3px #313131;
+     margin-bottom: 10px;
+     text-transform: none;
+
+ }
+
+ .checkout_success i{
+     color:white;
+     font-size: 2em;
+     text-shadow:  1px 1px 3px #313131;
+ }
+
+ .checkout_success p{
+     color: white;
+     padding: 20px 50px;
+     text-shadow:  1px 3px 3px #313131;
+ }
+
+ .checkout_success a{
+    color: white;
+    padding: 10px 20px;
+    background-color: #FFA001;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'fira sans light';
+    box-shadow: 2px 5px 5px grey;
+    text-shadow: 1px 3px 3px darkslategrey;
+}
+
+.checkout_success a:hover{
+    transition: 0.5s;
+    background-color: #0A3641;
+    color: white;
+}
+
+ .checkout_success{
+     background-image: url(images/daniel-roe-lpjb_UMOyx8-unsplash.jpg);
+     background-repeat: no-repeat;
+     background-position-x: 10%;
+     background-position-y: 80%;
+     min-height: 1em;
+     text-align: center;
+     padding-top: 70px;
+     padding-bottom: 70px;
+     background-size: cover;
+    }
+
+    .cart img{
+        max-height: 175px;
+        align-self: center;
+        justify-self: center;
+    }
+    .checkout h1{
+        background-image: none;
+        font-size: 1.8em;
+        text-shadow: none;
+        color: #0A3641;
+    }
+
+    .cart{
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+    .cart div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .cart div p:nth-child(1){
+        grid-column: 1/3;
+        color: #0A3641;
+        font-family: 'fira sans medium';
+        font-size: 1em;
+    }
+
+    .cart div p:nth-child(2){
+        grid-column: 1/3;
+        color: #0A3641;
+        font-family: 'fira sans medium';
+        font-size: 1em;
+    }
+
+    .cart div p{
+        text-align: left;
+
+    }
+
+    .trashcan_icon{
+        grid-column: 3/3;
+        color:#0A3641;
+        justify-self: end;
+    }
+
+    .heart_icon {
+        justify-self: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color:#0A3641;
+        height:25px;
+        width: 25px;
+        padding: 8px 46px;
+        margin-top: 5px;
+    }
+
+    #quantity{
+        padding: 13px 90px;
+        border-radius: 0px;
+        border-style: solid;
+        border-color: #0A3641;
+        border-width: 1px;
+        background-color: white;
+        font-size: 0.75em;
+        color: #0A3641;
+         font-family: 'fira sans';
+    }
+
+    .cart{
+        border-style: solid;
+        border-width: 1px;
+        border-color: #0A3641;
+        max-height: 275px;
+        padding-top: 20px;
+    }
+
+    .form{
+        display: block;
+    }
+
+    #firstname, #lastname, #number, #adress, #postnumber, #password, #confirmpassword{
+        width: 280px;
+    height: 35px;
+    font-family:
+    font-size: 0.5em;
+    color:#0A3641;
+    background-color: #b1eaf8;
+    border-radius: 0%;
+    border-color: #b1eaf8;
+    margin-right: 0px;
+    border: 0px;
+    padding-right: -1.5px;
+    }
+
+
+.form_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 0.8em;
+
+}
+
+.form_column_1{
+    grid-column: 1;
+}
+
+label{
+    color: grey;
+    font-size: 0.8em;
+}
+
+input{
+    margin-bottom: 20px;
+}
+
+legend{
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'fira sans';
+    font-size: 1.2em;
+    color: #0A3641;
+
+}
+
+#button_checkout{
+
+    color: white;
+    padding: 10px 20px;
+    background-color: #FFA001;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'fira sans light';
+    box-shadow: 2px 5px 5px grey;
+    text-shadow: 1px 3px 3px darkslategrey;
+}
+
+#button_checkout:hover{
+    transition: 0.5s;
+    background-color: #FFC11C;
+    color: white;
+}
