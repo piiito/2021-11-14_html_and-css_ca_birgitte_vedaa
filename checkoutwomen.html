@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rainy days for durable and high quality rain jackets for men and women"/>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/4eeada3bf1.js" crossorigin="anonymous"></script>
+
+    <title>Rainy Days | Checkout</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img id="logo_1" src="images/logo_white.png" alt="Rainy Days, Pushing the Comfort Zone" />
+                <img id="logo_2" src="images/logo_white_no_slogan.png"/>
+                </a>
+        </div>
+        <section class="help_section">
+            <i id="hidden" class="fas fa-search"></i>
+            <i id="hidden" class="far fa-heart"></i>
+            <i class="fas fa-shopping-bag"></i>
+            <div class="hamburger_menu">
+                <input type="checkbox" id="hamburger-checkbox"/>
+                <label for="hamburger-checkbox"><i class="fas fa-bars"></i></label> 
+            <ul class="hamburger">
+                <li><a href="">Shop all</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+            </div>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="womensjackets.html">Women</a></li>
+                <li><a href="mensjackets.html">Men</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Equipment</a></li>
+                <li><a href="#">Outlet</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <p>Order for $50 and get free shipping!</p>
+            <section class="checkout">
+                <h1>Checkout</h1>
+            </section>
+            <section class="cart">
+                <img src="images/size/cart.jpg"alt="Woman wearing a yellow rain coat"/>
+                <div class="cart_p">
+                    <p>Bergen raincoat</p>
+                    <p>69$</p>
+                    <p>Color:</p>
+                    <p>Sunny yellow</p>
+                    <p>Size:</p>
+                    <p>M</p>
+                    <p>Sum:</p>
+                    <p>69$</p>
+                </div>
+                <div class="trashcan_icon">
+                    <i class="fas fa-trash-alt"></i>
+                </div>
+                <div class="heart_icon">
+                    <i class="far fa-heart"></i>
+                </div>
+                <fieldset>
+                    <select name="quantity" id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </fieldset>
+
+
+            </section>
+            <form>
+                <legend> Fill inn your personal information</legend>
+                    <section class="form_wrapper">
+                        <div class="form_column_1"><form action="submit.php" method="POST">
+                            <label for="firstname">First name</label>
+                            <input placeholder="First name" type="text" name="firstname" id="firstname" class="form">
+                
+                            <label for="lastname">Last name</label>
+                            <input placeholder="Last name" type="text" name="lastname" id="lastname" class="form">
+                
+                            <label for="email">E-mail</label>
+                            <input placeholder="E-mail" type="text" name="email" id="email" class="form">
+                
+                            <label for="number">Mobile number</label>
+                            <input placeholder="Mobile number" type="text" name="number" id="number" class="form">
+                        </div>
+                        <div class="form_column_2">
+                            <label for="adress">Adress</label>
+                            <input placeholder="Adress" type="adress" name="adress" id="adress" class="form">
+                
+                            <label for="postnumber">Post number</label>
+                            <input placeholder="Post number" type="text" name="postnumber" id="postnumber" class="form">
+                
+                            <label for="password">Password</label>
+                            <input placeholder="Password" type="text" name="password" id="password" class="form">
+                
+                            <label for="password">Confirm password</label>
+                            <input placeholder="Confirm password" type="text" name="password" id="password" class="form">
+                        </div>
+                    </section>
+                    <div class="submit_button"></div>
+                        <input type="submit" value="Complete order" id="button_checkout">
+                    </div>    
+             </form>
+            
+            </main>
+            <footer>
+                <section class="newsletter">
+                    <div class="newsletter_title">
+                        <p>Newsletter</p>
+                    </div>
+                    <p>Register, get 10% off.</p>
+                    <form action="submit.php" method="POST">
+                        <label for="email"></label>
+                        <input placeholder="Enter your e-mail" type="text" name="email" id="email">
+                        <input type="submit" value="GO" id="button">
+                    </form>
+                </section>
+                <section class="follow">
+                    <p>Follow us</p>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-square"></i>
+        
+                </section>
+            </footer>
+</body>
+</html>
