@@ -994,7 +994,8 @@ legend {
     display: none !important;
   }
 
-  #hidden {
+  .fa-search,
+  .fa-heart {
     display: none;
   }
 
