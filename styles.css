@@ -1,5 +1,5 @@
 body {
-  font-family: "fira sans light", sans serif;
+  font-family: "fira sans light", sans-serif;
   margin: 0px;
 }
 
@@ -137,12 +137,15 @@ header Img {
 
 .hamburger {
   position: absolute;
-  right: 40px;
-  background-color: #b1eaf8;
+  right: 0px;
+  background-color: white;
   color: #0a3641;
+  border-color: none;
   font-size: 1em;
   margin-top: 65px;
   z-index: 999;
+  box-shadow: 1px 2px 3px grey;
+  padding: 30px;
 }
 
 .hamburger ul {
@@ -157,8 +160,12 @@ ul {
   list-style-type: none;
 }
 
+.hamburger li {
+  padding: 5px 0px;
+}
+
 .hamburger a {
-  padding: 10px 65px 10px 5px;
+  padding: 20px 65px 20px 5px;
   font-size: 1.2em;
   text-align: left;
   color: #0a3641;
@@ -1171,10 +1178,10 @@ legend {
 
   .hamburger {
     margin-top: 28.5px;
-    padding-left: 10px;
-    margin-right: -40px;
+    margin-right: 0px;
     height: 90px;
     font-size: 1.1em;
+    padding: 30px 10px 30px;
   }
 
   .hamburger_menu {
