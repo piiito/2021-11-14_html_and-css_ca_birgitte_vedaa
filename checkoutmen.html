@@ -32,9 +32,9 @@
                 </a>
         </div>
         <section class="help_section">
-            <i   class="fas fa-search"></i>
-            <i id="hidden_heart" class="far fa-heart"></i>
-            <i class="fas fa-shopping-bag"></i>
+            <i    class="fas fa-search"></i>
+            <i     class="far fa-heart"></i>
+            <a href="checkoutmen.html"> <i class="fas fa-shopping-bag"></i></a>
             <div class="hamburger_menu">
                 <input type="checkbox" id="hamburger-checkbox"/>
                 <label for="hamburger-checkbox"><i class="fas fa-bars"></i></label> 
@@ -49,9 +49,9 @@
             <ul>
                 <li><a href="womensjackets.html">Women</a></li>
                 <li><a href="mensjackets.html">Men</a></li>
-                <li><a href="#">Shoes</a></li>
-                <li><a href="#">Equipment</a></li>
-                <li><a href="#">Outlet</a></li>
+                <li><a href="underconstruction.html">Shoes</a></li>
+                <li><a href="underconstruction.html">Equipment</a></li>
+                <li><a href="underconstruction.html">Outlet</a></li>
             </ul>
         </nav>
         </header>
@@ -95,41 +95,55 @@
 
 
             </section>
-            <form>
+            <form id="customer_form">
                 <legend> Fill inn your personal information</legend>
-                    <section class="form_wrapper">
-                        <div class="form_column_1"><form action="submit.php" method="POST">
+                    <section class="form_wrapper" form action="submit.php" method="POST">
+                        <div>
                             <label for="firstname">First name</label>
                             <input placeholder="First name" type="text" name="firstname" id="firstname" class="form">
-                
+                            <div class="form-error" id="firstnameerror">First name is required</div>
+                        </div>
+                        <div>
                             <label for="lastname">Last name</label>
                             <input placeholder="Last name" type="text" name="lastname" id="lastname" class="form">
-                
+                            <div class="form-error" id="lastnameerror">Last name is required</div>
+                        </div>
+                        <div>
                             <label for="email">E-mail</label>
-                            <input placeholder="E-mail" type="text" name="email" id="email" class="form">
-                
+                            <input placeholder="E-mail" type="text" name="email" id="emailaddress" class="form">
+                            <div class="form-error" id="emailaddresserror">Valid email is required</div>
+                        </div>
+                        <div>
                             <label for="number">Mobile number</label>
                             <input placeholder="Mobile number" type="text" name="number" id="number" class="form">
+                            <div class="form-error" id="numbererror">Valid number is required</div>
                         </div>
-                        <div class="form_column_2">
-                            <label for="adress">Adress</label>
-                            <input placeholder="Adress" type="adress" name="adress" id="adress" class="form">
-                
+                        <div>
+                            <label for="address">Address</label>
+                            <input placeholder="Address" type="address" name="address" id="address" class="form">
+                            <div class="form-error" id="addresserror">Address is required</div>
+                        </div>
+                        <div>
                             <label for="postnumber">Post number</label>
                             <input placeholder="Post number" type="text" name="postnumber" id="postnumber" class="form">
-                
+                            <div class="form-error" id="postnumbererror">Postnumber is required</div>
+                        </div>
+                        <div>
                             <label for="password">Password</label>
                             <input placeholder="Password" type="text" name="password" id="password" class="form">
-                
+                            <div class="form-error" id="passworderror">Password must contain 8 characters, 1 lowercase, 1 uppercase letter and 1 number</div>
+                        </div>
+                        <div>
                             <label for="password">Confirm password</label>
-                            <input placeholder="Confirm password" type="text" name="password" id="password" class="form">
+                            <input placeholder="Confirm password" type="text" name="password" id="confirmpassword" class="form">
+                            <div class="form-error" id="confirmpassworderror">Password does not match</div>
                         </div>
                     </section>
                     <div class="submit_button"></div>
                         <input type="submit" value="Complete order" id="button_checkout">
                     </div>    
              </form>
-            
+            <script src="js/script.js"></script>
             </main>
             <footer>
                 <section class="newsletter">
