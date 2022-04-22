@@ -1,4 +1,66 @@
+const mensJackets = document.querySelector(".men_jacket_section");
+const mainUrl = "http://localhost/flower-power/wp-json/wc/store/products";
 
+const detailPage = document.querySelector(".bodøraincoat");
+const queryString = document.location.search;
+const params = new URLSearchParams(queryString);
+const id = params.get("id");
+console.log(id);
+
+detailPageUrl = mainUrl + id;
+console.log(detailPageUrl);
+
+async function getProducts(url){
+        const response = await fetch(url);
+        const results = await response.json();
+        console.log(results);
+    
+    mensJackets.innerHTML ="";
+    results.forEach(function(product){
+        mensJackets.innerHTML += `<div class="men_jacket_list">
+                                    <a href="specificmen.html?id=${product.id}">
+                                    <img src="${product.images[0].src}" alt${product.name}>
+                                    <h2>${product.name}</h2>
+                                    <h3>${product.prices.price} ${product.prices.currency_symbol}
+                                    </a>
+                                    </div>`;
+    })
+}
+
+getProducts(mainUrl);
+
+
+/* const detailPage = document.querySelector(".bodøraincoat");
+const queryString = document.location.search;
+const params = new URLSearchParams(queryString);
+const id = params.get("id");
+console.log(id);
+
+detailPageUrl = mainUrl + id;
+console.log(detailPageUrl); */
+
+async function productDetails(){
+    try{
+        const fetchDetails = await fetch(detailPageUrl);
+        const details = await fetchDetails.json();
+        console.log(details);
+
+        createHtml(details);
+    }
+    catch(error){
+        console.log(error);
+    }
+}
+
+productDetails();
+
+function createHtml(details){
+    detailPage.innerHTML += `<h1>${details.name}</h1>`;
+}
+
+
+ 
+ 
  console.log("hello");
 const addCart = document.querySelector(".add_cart");
 
@@ -136,3 +198,6 @@ function emailValidation(email){
     const emailMatch = emailTest.test(email);
     return emailMatch;
 }
+
+
+
