@@ -9,6 +9,7 @@ console.log(id);
 
 detailPageUrl = mainUrl + id;
 console.log(detailPageUrl);
+mensJackets.innerHTML="Loading..";
 
 async function getProducts(url){
         const response = await fetch(url);
