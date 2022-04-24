@@ -1,5 +1,5 @@
 const mensJackets = document.querySelector(".men_jacket_section");
-const mainUrl = "http://localhost/flower-power/wp-json/wc/store/products";
+const mainUrl = "https://sunnyflowers.site/flower-power/wp-json/wc/store/products";
 
 const detailPage = document.querySelector(".bodøraincoat");
 const queryString = document.location.search;

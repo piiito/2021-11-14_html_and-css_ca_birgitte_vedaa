@@ -1,5 +1,5 @@
  const detailPage = document.querySelector(".bodøraincoat");
- const mainUrl = "http://localhost/flower-power/wp-json/wc/store/products";
+ const mainUrl = "https://sunnyflowers.site/flower-power/wp-json/wc/store/products";
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
